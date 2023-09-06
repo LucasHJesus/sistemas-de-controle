@@ -27,58 +27,21 @@ Dado o circuito:
 ![exemplo de circuito subtrator](/3b/imagens/subtractor.jpg)
 
 É necessário retirar uma equação para V<sub>O</sub>. Para isso, primeiro são montadas as equações de V<sub>+</sub> e V<sub>-</sub>.
+![equações - 1 a 10](/3b/calculos/eq1-9.png)
+![equações - 1 a 10](/3b/calculos/eq10-17.png)
 
-Para V<sub>+</sub>
-$$
-\begin{align}
-    i_2 = i_3\\[5mm]
-    
-    \frac{v_B-v_+}{R_2}=\frac{v_+}{R_3}\\[5mm]
-    
-    v_+(\frac{1}{R_2}+\frac{1}{R_3})=\frac{v_B}{R_2}\\[5mm]
-    
-    v_+(\frac{R_2+R_3}{R_2R_3})=\frac{v_B}{R_3}\\[5mm]
-    
-    v_+=v_B(\frac{R_3}{R_2+R_3})
-    
-\end{align}
-$$
-Para V<sub>-</sub>:
-$$
-\begin{align}
-    i_1=i_2\\[5mm]
+###Para os exemplos citados na questãoanterior, construa um exemplo e sua simulaçãono SimulIDE. Apresente os prints da simulação e o desenvolvimento matemático.
 
-    \frac{v_A-v_-}{R1}=\frac{v_-v_O}{R_f}\\[5mm]
-    v_-(\frac{R_1+R_f}{R_1R_f})=\frac{v_O}{R_f}+\frac{v_A}{R_1}\\[5mm]
-    v_-=(\frac{R_1R_f}{R_1+R_f})(\frac{v_O}{R_f}+\frac{v_A}{R_1})\\[5mm]
+![Contas do primeiro exercicio](/3b/calculos/calculo01.jpeg)
+![Montagem e simulação do primeiro exercicio](/3b/imagens/circuito1.png)
 
-\end{align}
-$$
+![Contas do segundo exercicio](/3b/calculos/calculo02.jpeg)
+![Montagem do segundo exercicio](/3b/imagens/circ2.png)
+![Simulação do segundo exercicio](/3b/imagens/circuito2.png)
 
-Igualando $v_+$ e $v_-$
-$$
-\begin{align}
-    v_+=v_-\\[5mm]
-    v_B(\frac{R_3}{R_2+R_3})=(\frac{R_1R_f}{R_1+R_f})(\frac{v_O}{R_f}+\frac{v_A}{R_1})\\[5mm]
-    A=(\frac{R_3}{R_2+R_3})\\
-    v_B(\frac{R_3}{R_2+R_3})=v_O(\frac{R_1}{R_1+R_f})+v_A(\frac{R_2}{R_1+R_f})\\[5mm]
-    B=(\frac{R_2}{R_1+R_f})\
-    C=(\frac{R_1}{R_1+R_f})\\
-    v_O=\frac{1}{\frac{R_1}{R_1+R_f}}(\frac{R_3}{R_2+R_3}v_B-\frac{R_2}{R_1+R_f}v_A) \\[10mm]
-
-\end{align}
-$$
-Tornando todos os resistores iguais a 1:
-
-$$
-\begin{align}
-   v_O=2(\frac{1}{2}v_B-\frac{1}{2}v_A)\\[5mm]
-   v_o=v_B-v_A
-
-\end{align}
-$$
-
-
+![Contas do terceiro exercicio](/3b/calculos/calculo03a.jpeg)
+![Contas do terceiro exercicio](/3b/calculos/calculo03b.jpeg)
+![Montagem e simulação do terceiro exercicio](/3b/imagens/circuito3png.png)
 
 
 ### Veja os vídeos relativos às aulas 10e 11 da playlist apresentada e produza um resumo, detalhado, sobre as diferençasentre os Amplificadores Operacionais ideais e não ideais.
